@@ -1,0 +1,128 @@
+\documentclass[a4paper,12pt, top=35, bottom=30, left=37, right=30, oneside]{report}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage[paper=a4paper,margin=1in]{geometry}
+\usepackage[italian]{babel}
+\usepackage{listings}
+\usepackage{color}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[square,numbers]{natbib}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage[italian]{babel}
+\usepackage{tikz}
+\usepackage{pdfpages}
+\usetikzlibrary{arrows}
+\usetikzlibrary{backgrounds}
+\usepackage{booktabs}
+\usepackage[normalem]{ulem}
+\usepackage{listings}
+\usepackage{fancybox}
+\usepackage{xcolor}
+\usepackage{inconsolata}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+\linespread{1.2}
+
+\newcommand*\NewPage{\newpage\null\thispagestyle{empty}\newpage}
+
+\begin{document}
+    
+    \begin{titlepage}
+        
+        \noindent
+        \begin{minipage}[t]{0.19\textwidth}
+            \vspace{-4mm}{\includegraphics[scale=1.15]{Tesi/images/logo_unimib.pdf}}
+        \end{minipage}
+        \begin{minipage}[t]{0.81\textwidth}
+        {
+                \setstretch{1.42}
+                {\textsc{Università degli Studi di Milano - Bicocca}} \\
+                \textbf{Scuola di Scienze} \\
+                \textbf{Dipartimento di Informatica, Sistemistica e Comunicazione} \\
+                \textbf{Corso di laurea in Informatica} \\
+                \par
+        }
+        \end{minipage}
+        
+	\vspace{40mm}
+        
+	\begin{center}
+            {\LARGE{
+                    \setstretch{1.2}
+                    \textbf{URBAN STORIES SHARING: \\ LA APP DI RACCOLTA}
+                    \par
+            }}
+        \end{center}
+        
+        \vspace{50mm}
+
+        \noindent
+        {\large \textbf{Relatore:} Prof.ssa Daniela Micucci } \\
+
+        \noindent
+        {\large \textbf{Correlatore:} Dott. Davide Ginelli}
+        
+        \vspace{10mm}
+
+        \begin{flushright}
+            {\large \textbf{Relazione della prova finale di:}} \\
+            \large{Andrea Carubelli} \\
+            \large{Matricola 803192} 
+        \end{flushright}
+        
+        \vspace{40mm}
+        \begin{center}
+            {\large{\bf Anno Accademico 2017-2018}}
+        \end{center}
+
+        \restoregeometry
+        
+    \end{titlepage}
+    
+\NewPage{\newpage}
+\newpage{}
+    
+\renewcommand{\contentsname}{Indice}
+\tableofcontents
+
+\include{Tesi/Introduction}
+\include{Tesi/Dediche}
+\include{Tesi/Chapter1}
+\include{Tesi/Chapter2}
+\include{Tesi/Chapter3}
+\include{Tesi/Chapter4}
+
+\bibliographystyle{plain}
+\bibliography{Tesi/Bibliografia}
+\end{document}
